@@ -7,8 +7,19 @@
   Tip: use the string method .split() and the array method .join()
 */
 
-function capitalise(str) {}
+function capitalise(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
+  //***********Using split() and join() methods */
+  function capitalise(str) {
+    let firstLetter = str.charAt(0).toUpperCase();
+    str = str.split("");
+    console.log(str);
+    str[0] = firstLetter;
+    console.log(str);
+    return (str = str.join(""));
+  }
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

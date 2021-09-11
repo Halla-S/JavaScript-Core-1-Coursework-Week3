@@ -20,9 +20,9 @@ names[2] = names[2].substring();
 names[3] = names[3].substring();
 names[4] = names[4].substring();
 
-names.forEach((name) => {
-  console.log(name);
-});
+names.forEach((name) => 
+  console.log(name.substring(0, name.indexOf(" "))))
+
 
 /* EXPECTED OUTPUT 
 

@@ -6,9 +6,11 @@
   - Do not edit any of the existing code
 */
 
-var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
+var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1,4], null, [1], false, "whoops"];
 
-var pairsByIndex; // Complete this statement
+var pairsByIndex = pairsByIndexRaw.filter(
+  indexes => indexes !== null && indexes.length>1 && typeof indexes!== "string"
+);// Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
@@ -20,3 +22,4 @@ var pairs = pairsByIndex.map(function (indexes) {
 });
 
 console.log(pairs);
+

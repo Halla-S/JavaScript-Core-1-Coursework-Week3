@@ -15,7 +15,13 @@
   
 */
 
-function getSettlers() {}
+
+  function getSettlers(arr) {
+return (arr.filter((item) =>
+ /^A[\s\w+]*family/.test(item)
+  
+ ))
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

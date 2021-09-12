@@ -9,7 +9,7 @@
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1,4], null, [1], false, "whoops"];
 
 var pairsByIndex = pairsByIndexRaw.filter(
-  indexes => indexes !== null && indexes.length>1 && typeof indexes!== "string"
+  indexes => indexes !== null && indexes.length===2 && typeof indexes=== "object"
 );// Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];

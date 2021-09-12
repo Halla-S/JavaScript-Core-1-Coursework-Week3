@@ -10,7 +10,7 @@ var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1,4], null, [1], false, "whoops"];
 
 var pairsByIndex = pairsByIndexRaw.filter(
   indexes => indexes !== null && indexes.length===2 && typeof indexes=== "object"
-);// Complete this statement
+);// typeof indexes=== "object" can be omitted as "whoops".length!==2
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];

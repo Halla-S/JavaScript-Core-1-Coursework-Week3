@@ -15,9 +15,7 @@ function capitalise(str) {
   function capitalise(str) {
     let firstLetter = str.charAt(0).toUpperCase();
     str = str.split("");
-    console.log(str);
     str[0] = firstLetter;
-    console.log(str);
     return (str = str.join(""));
   }
 /* 

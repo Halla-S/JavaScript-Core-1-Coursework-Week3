@@ -14,12 +14,10 @@ let story =
   "I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
 
 let result = story.replace("10", "100000");
-result = result.replace(/dogs./g, "cats.");
-result = result.replace("day.", "night.");
-result = result.replace("day", "night");
+result = result.replace(/dogs/g, "cats");
+result = result.replace(/day/g, "night");
 result = result.replace("great", "brilliant");
-//Can also be done this way :
-// let result = story
+
 //   .replace("10", "100000").replace(/dogs./g, "cats.").replace("day.", "night.").replace("day", "night").replace("great", "brilliant");
 
 

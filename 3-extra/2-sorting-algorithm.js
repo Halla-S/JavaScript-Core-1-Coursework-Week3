@@ -25,22 +25,19 @@ function sortAges(arr) {
     return arr1;
   }
   let arr2 = Numbers(arr);
-  var done = false;
-  while (!done) {
-    done = true;
-    for (var i = 1; i < arr2.length; i += 1) {
-      if (arr2[i - 1] > arr2[i]) {
-        done = false;
-        var tmp = arr2[i - 1];
-        arr2[i - 1] = arr2[i];
-        arr2[i] = tmp;
+  let n = 0;
+  for (var i = 0; i < arr2.length; i++) {
+    for (var j = 0; j < arr2.length; j++) {
+      if (arr2[i] < arr2[j]) {
+        n = arr2[i];
+        arr2[i] = arr2[j];
+        arr2[j] = n;
       }
     }
   }
-
-  return arr2;
+  return arr2
 }
-
+  
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const agesCase1 = [
